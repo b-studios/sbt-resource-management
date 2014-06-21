@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.openstudy</groupId>
+    <artifactId>sbt-resource-management</artifactId>
+    <packaging>jar</packaging>
+    <description>sbt-resource-management</description>
+    <version>0.5-SNAPSHOT</version>
+    <name>sbt-resource-management</name>
+    <organization>
+        <name>com.openstudy</name>
+    </organization>
+    <url>http://github.com/Shadowfiend/sbt-resource-management</url>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>http://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/Shadowfiend/sbt-resource-management.git</url>
+        <connection>https://github.com/Shadowfiend/sbt-resource-management.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>shadowfiend</id>
+            <name>Antonio Salazar Cardozo</name>
+            <email>savedfastcool@gmail.com</email>
+        </developer>
+        <developer>
+            <id>farmdawgnation</id>
+            <name>Matt Farmer</name>
+            <email>matt@frmr.me</email>
+        </developer>
+    </developers>
+    <properties>
+        <sbtVersion>0.13</sbtVersion>
+        <scalaVersion>2.10</scalaVersion>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-sbt</groupId>
+            <artifactId>sbt</artifactId>
+            <version>0.13.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yahoo.platform.yui</groupId>
+            <artifactId>yuicompressor</artifactId>
+            <version>2.4.7</version>
+        </dependency>
+    </dependencies>
+</project>
