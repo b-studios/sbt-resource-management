@@ -38,12 +38,4 @@ libraryDependencies += "com.yahoo.platform.yui" % "yuicompressor"  % "2.4.7"
 
 scalacOptions += "-deprecation"
 
-publishTo <<= version { (v: String) =>
-  val nexus = "https://oss.sonatype.org/"
-  if (v.trim.endsWith("SNAPSHOT"))
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
-
-credentials += Credentials(Path.userHome / ".sonatype")
+publishTo := Some(Resolver.file("file",  new File( "release" )) )
